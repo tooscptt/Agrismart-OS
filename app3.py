@@ -88,7 +88,7 @@ except:
     st.stop()
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-flash-latest")
 
 # Setup Mock Database
 if 'users_db' not in st.session_state:
